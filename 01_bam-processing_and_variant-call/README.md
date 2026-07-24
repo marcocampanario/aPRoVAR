@@ -8,7 +8,7 @@ The workflow was developed for DRAGEN Bio-IT Platform v4.3.6 and the GRCh38 refe
 
 | Order | Script | Main purpose |
 |---:|---|---|
-| 1 | `01_DRAGEN_bam_processing_and_variant_call.sh` | Read the sample sheet, process each unique `RGSM`, align reads to GRCh38, generate an indexed BAM, and call SNVs/INDELs in VCF and compact GVCF formats. |
+| 1 | `01_DRAGEN_bam_processing_and_variant_call.sh` | Read the sample sheet, process each unique `RGSM`, align reads to GRCh38, generate an indexed BAM, and call SNVs/INDELs in VCF and GVCF formats. |
 
 ## Required inputs
 
