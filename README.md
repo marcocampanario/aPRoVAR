@@ -1,8 +1,8 @@
-# aPRoVAR bam processing and variant call (`01_bam-processing_and_variant-call/`)
+# Bam processing and variant call (`01_bam-processing_and_variant-call/`)
 
-# aPRoVAR bam processing and variant call (`02_allele-frequency-phenotype-adjustment/`)
+# Phenotype-driven adjustment of allele frequency estimates (`02_allele-frequency-phenotype-adjustment/`)
 
-# aPRoVAR bam processing and variant call (`03_vcf-annotation_and_json-parsing/`)
+# VCF annotation and JSON parsing (`03_vcf-annotation_and_json-parsing/`)
 
 # aPRoVAR variant annotation and descriptive analysis (`04_aPRoVAR-variant-analysis/`)
 
