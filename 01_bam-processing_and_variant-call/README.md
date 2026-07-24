@@ -9,6 +9,7 @@ The workflow was developed for DRAGEN Bio-IT Platform v4.3.6 and the GRCh38 refe
 | Order | Script | Main purpose |
 |---:|---|---|
 | 1 | `01_DRAGEN_bam_processing_and_variant_call.sh` | Read the sample sheet, process each unique `RGSM`, align reads to GRCh38, generate an indexed BAM, and call SNVs/INDELs in VCF and GVCF formats. |
+| 2 | `02_run_joint_genotyping.sh` | Read the individual gVCFs sheet, execute joint genotyping, and generate multisample VCF. |
 
 ## Required inputs
 
@@ -18,6 +19,7 @@ The workflow was developed for DRAGEN Bio-IT Platform v4.3.6 and the GRCh38 refe
 3. FASTQ files referenced by the sample sheet.
 4. A target-region BED file for the Twist Illumina Exome 2.0 Plus panel.
 5. The DRAGEN machine-learning recalibration models distributed with DRAGEN v4.3.6.
+6. A list of gVCFs in a plain text file.
 
 ## Software requirements
 
@@ -49,9 +51,13 @@ bash 01_DRAGEN_bam_processing_and_variant_call.sh
 
 Samples are processed sequentially. An associative array tracks previously observed `RGSM` values, preventing duplicate processing when the same sample appears in more than one FASTQ-list row.
 
+```bash
+bash 02_run_joint_genotyping.sh
+```
+
 ## DRAGEN configuration
 
-The script enables:
+The scripts enables:
 
 - read mapping and alignment to GRCh38;
 - coordinate sorting;
@@ -61,7 +67,8 @@ The script enables:
 - sex-aware processing of sex chromosomes;
 - small-variant calling restricted to the exome target BED;
 - compact GVCF output and standard VCF output;
-- machine-learning-based variant recalibration.
+- machine-learning-based variant recalibration;
+- joint genotyping.
 
 Secondary and supplementary alignments are suppressed using:
 

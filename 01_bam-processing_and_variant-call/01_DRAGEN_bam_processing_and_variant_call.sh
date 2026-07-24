@@ -1,4 +1,4 @@
-##### 01_DRAGEN_bam_processing_and_variant_call.SH #####
+##### 01_DRAGEN_bam_processing_and_variant_call.sh #####
 # Tiago Minuzzi Freire da Fontoura Gomes @ Fiocruz Paraná, 2026 Jul.
 # Read mapping, coordinate sorting, duplicate marking, BAM indexing,
 # HLA typing, and small-variant calling for each sample listed in a
