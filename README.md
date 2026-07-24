@@ -67,124 +67,78 @@ aPRoVAR/
 └── README.md
 ```
 
-# Bam processing and variant call (`01_bam-processing_and_variant-call/`)
+## Block 01: BAM processing and variant calling
 
-# Phenotype-driven adjustment of allele frequency estimates (`02_allele-frequency-phenotype-adjustment/`)
+The first block processes each sample with DRAGEN Bio-IT Platform v4.3.6. Reads are aligned to GRCh38, coordinate-sorted, duplicate-marked, and written as indexed BAM files. Small variants are called within the Twist Illumina Exome 2.0 Plus target regions, producing standard VCFs and compact per-sample GVCFs.
 
-# VCF annotation and JSON parsing (`03_vcf-annotation_and_json-parsing/`)
+HLA typing is enabled, whereas CNV and SV calling are disabled. Sample sex is supplied through the FASTQ sample sheet.
 
-# aPRoVAR variant annotation and descriptive analysis (`04_aPRoVAR-variant-analysis/`)
+See the [Block 01 README](01_bam-processing_and_variant-call/README.md) for the required sample-sheet format, DRAGEN resources, configuration variables, and outputs.
 
-This directory contains the modular, manuscript-oriented version of the original Campanário & Janke *et al.* (2026) analyses. The workflow uses one script per analytical block, and produces explicit checkpoints so that downstream modules can be rerun without repeating the full JSON/Nirvana parsing stage.
+## Block 02: Phenotype-adjusted allele frequencies
 
-## Workflow
+The APROVAR-1010-WES cohort contains individuals recruited through studies of COVID-19, sepsis, and breast cancer. To minimize phenotype-driven frequency bias, variants in genes associated with each condition are recalculated after excluding individuals recruited because of the matching phenotype.
 
-| Order | Script | Main purpose |
-|---:|---|---|
-| 1 | `scripts/01_prepare_variant_data.R` | Read the parsed multisample object, extract VCF metrics, split multiallelic sites, join ABRaOM annotations, and build the presence matrix. |
-| 2 | `scripts/02_classify_variants.R` | Assign Known, Absent, or Novel status; calculate exact genotype-based allele counts; classify singleton, doubleton, rare, and polymorphic sites; retain `F_MISSING = 0`. |
-| 3 | `scripts/03_variant_discovery.R` | Calculate cumulative variant discovery and aPRoVAR variant composition. |
-| 4 | `scripts/04_clinvar_analysis.R` | Consolidate ClinVar germline assertions, identify P/LP variants, count genes, and generate word clouds. |
-| 5 | `scripts/05_pharmacogenetic_analysis.R` | Match ClinPGx relationships and summarize the nine priority pharmacogenes. |
-| 6 | `scripts/06_plof_analysis.R` | Identify strict MANE Select RefSeq high-impact pLOF variants, pD variants with REVEL score ≥ 0.773, and build ClinVar/pLOF/pD tables. |
-| 7 | `scripts/07_frequency_spectrum.R` | Generate the allele-frequency spectrum overall and by variant origin. |
-| 8 | `scripts/08_article_figures.R` | Reproduce all Campanário & Janke *et al.* (2026) figures. |
-| 9 | `scripts/09_quality_control_checks.R` | Validate cross-module row counts, classifications, checkpoints, and output provenance. |
+The workflow:
 
-Shared paths and constants are defined in `R/00_config.R`; reusable functions are defined in `R/01_functions.R`.
+1. adds full-cohort `AF` and `F_MISSING`;
+2. converts phenotype-specific gene lists into BED intervals;
+3. recalculates `AC`, `AN`, and `AF` after phenotype-specific sample exclusions;
+4. annotates the recalculated value into the original VCF as `AF_EXCL`.
 
-## Required inputs
+See the [Block 02 README](02_allele-frequency-phenotype-adjustment/README.md) for the `config.txt` format, commands, phenotype-gene evidence, references, and interpretation of `AF_EXCL`.
 
-Place the following files in `data/raw/`, or override their paths with environment variables:
+## Block 03: VCF annotation and JSON parsing
 
-1. `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_header.rds`
-2. `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_tbl_inicial.rds.gz`
-3. `multi_vcf_XY_rerun_annovar.hg38_multianno_colunas-ok.txt`
-4. `relationships.tsv` from the ClinPGx relationship export
-5. `ensembl_to_hgnc.tsv` from Ensembl v116 BioMaRt query (Optional*)
+The phenotype-adjusted multisample VCF is annotated with Illumina Nirvana. The included R parser separates the large Nirvana JSON into header, position, and gene sections; parses position and gene records in parallel; and constructs compressed RDS objects for downstream analyses.
 
-`*` An optional `ensembl_to_hgnc.tsv` file may be supplied with columns `ensembl_gene_id` and `hgnc_symbol`. Our workflow deliberately avoids live biomaRt requests so that gene-symbol resolution remains versionable and reproducible.
+The current repository snapshot includes the JSON parser but not the command or script used to run Nirvana. A compatible Nirvana JSON file is therefore required to reproduce this block.
 
-The ANNOVAR table must contain `Chr`, `Start`, `Ref`, `Alt`, `abraom_freq`, and `AF`. The parsed variant table must contain `chromosome`, `position`, `refAllele`, `altAlleles`, `samples`, `variants`, and `vcfInfo`.
+See the [Block 03 README](03_vcf-annotation_and_json-parsing/README.md) for the expected JSON structure, R dependencies, memory and parallelization settings, output objects, and validation checks.
 
-## Installation
+## Block 04: Variant annotation and descriptive analysis
 
-Install the required R packages once:
+The final block is a modular R workflow that:
 
-```r
-install.packages(c(
-  "data.table", "dplyr", "ggplot2", "openxlsx", "purrr", "readr",
-  "scales", "stringr", "tibble", "tidyr", "writexl"
-))
+- prepares and validates the parsed variant data;
+- assigns Known, Absent, and Novel status;
+- calculates exact genotype-based allele counts and frequency classes;
+- summarizes cumulative variant discovery;
+- consolidates ClinVar germline assertions;
+- evaluates ClinPGx relationships and priority pharmacogenes;
+- identifies strict MANE Select pLOF variants and REVEL-supported pD variants;
+- reproduces manuscript figures and tables;
+- runs cross-module quality-control checks.
 
-# Optional figure packages
-install.packages(c("ggVennDiagram", "ggwordcloud"))
-```
+See the [Block 04 README](04_aProVAR-variant-analysis/README.md) for installation, raw-data requirements, path overrides, analytical definitions, validation, and module-level execution.
 
-`pigz` is optional. When available, the workflow uses it for parallel RDS decompression and compression; otherwise it falls back to base R.
+## Principal data flow
 
-## Running the workflow
+| Produced by | Output | Consumed by |
+|---|---|---|
+| Block 01 | Per-sample compact GVCFs | Multisample processing preceding Block 02 |
+| Block 02 | `multi_gvcf_FINAL_FMISSING_AF_contextual.vcf.gz` | Nirvana annotation preceding Block 03 |
+| Block 03 | `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_header.rds` | Block 04 |
+| Block 03 | `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_tbl_inicial.rds.gz` | Block 04 |
+| Block 04 | Processed checkpoints, source tables, figures, and QC reports | Manuscript and downstream reuse |
 
-From this project directory:
+## Reproducibility
 
-```bash
-Rscript run_all.R
-```
+Each block has distinct infrastructure requirements:
 
-Each module can also be executed independently after its prerequisite checkpoint exists:
+- Block 01 requires DRAGEN v4.3.6 and its reference/model resources.
+- Block 02 requires `bcftools`, `bgzip`, `tabix`, R, and Ensembl BioMart access.
+- Block 03 requires R, `pigz`, sufficient RAM, and a compatible Nirvana JSON file.
+- Block 04 requires R and the raw annotation resources listed in its module README.
 
-```bash
-Rscript scripts/04_clinvar_analysis.R
-```
+Large genomic inputs and patient-level sequencing files are not included in this repository. Software versions, reference releases, database releases, sample manifests, phenotype exclusion lists, and file checksums should be retained alongside every complete execution.
 
-Outputs are written to:
+## Companion repository
 
-- `data/processed/`: reusable RDS checkpoints;
-- `results/tables/`: TSV and Excel source tables;
-- `results/figures/`: publication-resolution PNG/TIFF figures;
-- `results/reports/`: metrics, diagnostic terms, provenance, and `sessionInfo()`.
+Code used to develop the aPRoVAR web interface is available at:
 
-## Path overrides
+[https://github.com/omatheuspimenta/aPRoVAR](https://github.com/omatheuspimenta/aPRoVAR)
 
-The workflow does not use `setwd()`. Configure paths from the shell when files are stored elsewhere:
+## License
 
-```bash
-export APROVAR_DATA_DIR=/path/to/aprovar/data
-export APROVAR_RESULTS_DIR=/path/to/aprovar/results
-export APROVAR_ABRAOM_ANNOVAR_TSV=/path/to/multianno.txt
-export APROVAR_CLINPGX_RELATIONSHIPS_TSV=/path/to/relationships.tsv
-Rscript run_all.R
-```
-
-All supported variables are documented in `R/00_config.R`.
-
-## Analytical definitions
-
-- **Known:** observed with AF > 0 in gnomAD Genomes, gnomAD Exomes, 1000 Genomes, or ABraOM. Both gnomAD resources contribute to population-presence classification; when one gnomAD frequency is required for reporting, Genomes is preferred and Exomes is used as the fallback.
-- **Absent:** absent from those population-frequency resources but assigned a dbSNP identifier.
-- **Novel:** absent from the population-frequency resources and without a dbSNP identifier.
-- **Singleton:** alternate allele count (AC) = 1.
-- **Doubleton:** AC = 2; homozygous doubletons are retained as a traceable subclass.
-- **Rare:** AC > 2 and AF < 1%.
-- **Polymorphic:** AF ≥ 1%.
-- **pLOF:** predicted loss-of-function, based on high-impact consequence on a canonical MANE Select RefSeq transcript.
-- **pD:** predicted damaging, based on REVEL score ≥ 0.773.
-
-
-Frequency classes are derived from parsed genotypes. This handles haploid calls and chromosome-specific allele numbers more safely.
-
-## Important count provenance
-
-`AF_EXCL` is preferred over `AF` when present because it represents the phenotype-adjusted aPRoVAR frequency. If the corresponding adjusted allele number is unavailable, the population-comparison module uses `APROVAR_LOCAL_ADJUSTED_AN` and explicitly flags `local_counts_inferred = TRUE`.
-
-ANNOVAR removes VCF anchor alleles and may simplify or reposition INDEL and complex-allele representations. Consequently, direct `CHR-POS-REF-ALT` matching is incomplete for this input. The workflow aligns the ANNOVAR table by source row index only after confirming equal row counts and complete chromosome agreement. These parameters are specific for our data set, based on prior comparison of records between aPRoVAR and ABraOM. The measured alignment metrics are written to `results/reports/01_annovar_alignment_metrics.tsv`; the workflow stops if any safeguard fails.
-
-## Validation
-
-Run the lightweight helper-function tests with:
-
-```bash
-Rscript tests/test_core_functions.R
-```
-
-The full workflow ends with structural quality-control checks. Because the raw aPRoVAR inputs are not included here, syntax and unit checks do not replace a complete run on the source dataset.
+See [`LICENSE`](LICENSE) for the terms governing use of the code in this repository.
