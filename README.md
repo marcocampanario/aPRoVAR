@@ -1,7 +1,5 @@
 # aPRoVAR: Arquivo Paranaense Online de Variantes Genéticas (http://aprovardb.icc.fiocruz.br)
 
-
-
 This repository contains the bioinformatics workflows used to generate, process, annotate, and analyze the APROVAR-1010-WES dataset described by Campanário & Janke *et al.* (2026).
 
 aPRoVAR is a regional genomic resource comprising germline whole-exome sequencing data from 1,010 individuals from Paraná, Southern Brazil. The repository is organized into four consecutive analytical blocks, from raw sequencing reads to the manuscript-oriented descriptive analyses.
