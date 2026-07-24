@@ -1,3 +1,72 @@
+# aPRoVAR: Arquivo Paranaense Online de Variantes Genéticas
+
+This repository contains the bioinformatics workflows used to generate, process, annotate, and analyze the APROVAR-1010-WES dataset described by Campanário & Janke *et al.* (2026).
+
+aPRoVAR is a regional genomic resource comprising germline whole-exome sequencing data from 1,010 individuals from Paraná, Southern Brazil. The repository is organized into four consecutive analytical blocks, from raw sequencing reads to the manuscript-oriented descriptive analyses.
+
+## Analytical workflow
+
+| Block | Directory | Main purpose |
+|---:|---|---|
+| 01 | [`01_bam-processing_and_variant-call/`](01_bam-processing_and_variant-call/) | Process FASTQ files with DRAGEN, generate indexed BAMs, and call small variants in VCF and compact GVCF formats. |
+| 02 | [`02_allele-frequency-phenotype-adjustment/`](02_allele-frequency-phenotype-adjustment/) | Calculate full-cohort allele frequencies and recalculate frequencies in phenotype-associated genes after excluding the matching recruitment group. |
+| 03 | [`03_vcf-annotation_and_json-parsing/`](03_vcf-annotation_and_json-parsing/) | Parse Nirvana JSON annotations and convert position-, sample-, variant-, transcript-, and gene-level data into reusable R objects. |
+| 04 | [`04_aProVAR-variant-analysis/`](04_aProVAR-variant-analysis/) | Classify and summarize variants, evaluate ClinVar and pharmacogenetic annotations, identify pLOF/pD variants, and reproduce article figures and tables. |
+
+```text
+FASTQ
+  |
+  v
+01 — DRAGEN mapping and small-variant calling
+  |
+  v
+Multisample VCF
+  |
+  v
+02 — Phenotype-adjusted allele-frequency estimation
+  |
+  v
+VCF containing AF, F_MISSING, and AF_EXCL
+  |
+  v
+03 — Nirvana annotation and JSON parsing
+  |
+  v
+Parsed RDS objects
+  |
+  v
+04 — Variant classification and descriptive analyses
+  |
+  v
+Manuscript tables, figures, checkpoints, and QC reports
+```
+
+## Repository structure
+
+```text
+aPRoVAR/
+├── 01_bam-processing_and_variant-call/
+│   ├── 01_DRAGEN_bam_processing_and_variant_call.sh
+│   └── README.md
+├── 02_allele-frequency-phenotype-adjustment/
+│   ├── 01-anotar_informacao_missingness_campoINFOandAF.sh
+│   ├── 02-escrever-BED-a-partir-de-lista-de-genes.R
+│   ├── 03-recalcular_AF_vies_fenotipo.sh
+│   ├── 04-anotar_vcf_original_com_AFs_recalculadas.sh
+│   └── README.md
+├── 03_vcf-annotation_and_json-parsing/
+│   ├── 02_read_json.R
+│   └── README.md
+├── 04_aProVAR-variant-analysis/
+│   ├── R/
+│   ├── scripts/
+│   ├── tests/
+│   ├── results/
+│   └── README.md
+├── LICENSE
+└── README.md
+```
+
 # Bam processing and variant call (`01_bam-processing_and_variant-call/`)
 
 # Phenotype-driven adjustment of allele frequency estimates (`02_allele-frequency-phenotype-adjustment/`)
