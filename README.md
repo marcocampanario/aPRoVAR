@@ -47,6 +47,7 @@ Manuscript tables, figures, checkpoints, and QC reports
 aPRoVAR/
 ├── 01_bam-processing_and_variant-call/
 │   ├── 01_DRAGEN_bam_processing_and_variant_call.sh
+│   ├── 02_run_joint_genotyping.sh
 │   └── README.md
 ├── 02_allele-frequency-phenotype-adjustment/
 │   ├── 01-anotar_informacao_missingness_campoINFOandAF.sh
