@@ -1,7 +1,5 @@
 # VCF annotation and Nirvana JSON parsing
 
-Scripts by Tiago Minuzzi Freire da Fontoura Gomes ![blob-pkmn-ghastly.png](blob-pkmn-ghastly.png)
-
 This directory contains the workflow used to parse the large JSON output produced by Illumina Nirvana and convert its position-, variant-, sample-, and gene-level annotations into reusable R objects for downstream aPRoVAR analyses.
 
 The input to this block is the phenotype-adjusted multisample VCF generated in `../02_allele-frequency-phenotype-adjustment/` after annotation with Nirvana against GRCh38 resources.
