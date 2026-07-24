@@ -1,4 +1,4 @@
-# aPRoVAR: Arquivo Paranaense Online de Variantes Genéticas (http://aprovardb.icc.fiocruz.br)
+# :brazil: aPRoVAR: Arquivo Paranaense Online de Variantes Genéticas (http://aprovardb.icc.fiocruz.br)
 
 This repository contains the bioinformatics workflows used to generate, process, annotate, and analyze the APROVAR-1010-WES dataset described by Campanário & Janke *et al.* (2026).
 
