@@ -8,7 +8,7 @@ aPRoVAR is a regional genomic resource comprising germline whole-exome sequencin
 
 | Block | Directory | Main purpose |
 |---:|---|---|
-| 01 | [`01_bam-processing_and_variant-call/`](01_bam-processing_and_variant-call/) | Process FASTQ files with DRAGEN, generate indexed BAMs, and call small variants in VCF and compact GVCF formats. |
+| 01 | [`01_bam-processing_and_variant-call/`](01_bam-processing_and_variant-call/) | Process FASTQ files with DRAGEN, generate indexed BAMs, call small variants in VCF and GVCF files, and generate multisample VCF. |
 | 02 | [`02_allele-frequency-phenotype-adjustment/`](02_allele-frequency-phenotype-adjustment/) | Calculate full-cohort allele frequencies and recalculate frequencies in phenotype-associated genes after excluding the matching recruitment group. |
 | 03 | [`03_vcf-annotation_and_json-parsing/`](03_vcf-annotation_and_json-parsing/) | Parse Nirvana JSON annotations and convert position-, sample-, variant-, transcript-, and gene-level data into reusable R objects. |
 | 04 | [`04_aProVAR-variant-analysis/`](04_aProVAR-variant-analysis/) | Classify and summarize variants, evaluate ClinVar and pharmacogenetic annotations, identify pLOF/pD variants, and reproduce article figures and tables. |
