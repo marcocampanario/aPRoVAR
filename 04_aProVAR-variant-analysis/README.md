@@ -1,10 +1,4 @@
-# aPRoVAR bam processing and variant call (`01_bam-processing_and_variant-call/`)
-
-# aPRoVAR bam processing and variant call (`02_allele-frequency-phenotype-adjustment/`)
-
-# aPRoVAR bam processing and variant call (`03_vcf-annotation_and_json-parsing/`)
-
-# aPRoVAR variant annotation and descriptive analysis (`04_aPRoVAR-variant-analysis/`)
+# aPRoVAR variant annotation and descriptive analysis
 
 This directory contains the modular, manuscript-oriented version of the original Campanário & Janke *et al.* (2026) analyses. The workflow uses one script per analytical block, and produces explicit checkpoints so that downstream modules can be rerun without repeating the full JSON/Nirvana parsing stage.
 
