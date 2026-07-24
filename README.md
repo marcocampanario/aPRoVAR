@@ -32,7 +32,7 @@ VCF containing AF, F_MISSING, and AF_EXCL
 03 — Nirvana annotation and JSON parsing
   |
   v
-Parsed RDS objects
+Parsed RDS objects with Nirvana JSON annotations
   |
   v
 04 — Variant classification and descriptive analyses
