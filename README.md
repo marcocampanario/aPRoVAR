@@ -55,6 +55,7 @@ aPRoVAR/
 │   ├── 04-anotar_vcf_original_com_AFs_recalculadas.sh
 │   └── README.md
 ├── 03_vcf-annotation_and_json-parsing/
+│   ├── 01_run_Nirvana.R
 │   ├── 02_read_json.R
 │   └── README.md
 ├── 04_aProVAR-variant-analysis/
@@ -69,9 +70,9 @@ aPRoVAR/
 
 ## Block 01: BAM processing and variant calling
 
-The first block processes each sample with DRAGEN Bio-IT Platform v4.3.6. Reads are aligned to GRCh38, coordinate-sorted, duplicate-marked, and written as indexed BAM files. Small variants are called within the Twist Illumina Exome 2.0 Plus target regions, producing standard VCFs and compact per-sample GVCFs.
+The first block processes each sample with DRAGEN Bio-IT Platform v4.3.6. Reads are aligned to GRCh38, coordinate-sorted, duplicate-marked, and written as indexed BAM files. Small variants are called within the Twist Illumina Exome 2.0 Plus target regions, producing per-sample VCFs and GVCFs, and a multisample VCF after joint genotyping.
 
-HLA typing is enabled, whereas CNV and SV calling are disabled. Sample sex is supplied through the FASTQ sample sheet.
+CNV and SV calling were disabled. Sample sex is supplied through the FASTQ sample sheet.
 
 See the [Block 01 README](01_bam-processing_and_variant-call/README.md) for the required sample-sheet format, DRAGEN resources, configuration variables, and outputs.
 
