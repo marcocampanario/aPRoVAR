@@ -113,27 +113,6 @@ The final block is a modular R workflow that:
 
 See the [Block 04 README](04_aProVAR-variant-analysis/README.md) for installation, raw-data requirements, path overrides, analytical definitions, validation, and module-level execution.
 
-## Principal data flow
-
-| Produced by | Output | Consumed by |
-|---|---|---|
-| Block 01 | Per-sample compact GVCFs | Multisample processing preceding Block 02 |
-| Block 02 | `multi_gvcf_FINAL_FMISSING_AF_contextual.vcf.gz` | Nirvana annotation preceding Block 03 |
-| Block 03 | `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_header.rds` | Block 04 |
-| Block 03 | `multi_gvcf_FINAL_FMISSING_AF_contextual_aPRoVAR_22052026_tbl_inicial.rds.gz` | Block 04 |
-| Block 04 | Processed checkpoints, source tables, figures, and QC reports | Manuscript and downstream reuse |
-
-## Reproducibility
-
-Each block has distinct infrastructure requirements:
-
-- Block 01 requires DRAGEN v4.3.6 and its reference/model resources.
-- Block 02 requires `bcftools`, `bgzip`, `tabix`, R, and Ensembl BioMart access.
-- Block 03 requires R, `pigz`, sufficient RAM, and a compatible Nirvana JSON file.
-- Block 04 requires R and the raw annotation resources listed in its module README.
-
-Large genomic inputs and patient-level sequencing files are not included in this repository. Software versions, reference releases, database releases, sample manifests, phenotype exclusion lists, and file checksums should be retained alongside every complete execution.
-
 ## Companion repository
 
 Code used to develop the aPRoVAR web interface is available at:
