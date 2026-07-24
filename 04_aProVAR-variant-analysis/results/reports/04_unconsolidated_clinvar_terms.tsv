@@ -1,0 +1,550 @@
+clinvar_classification	n_variants
+Benign;Uncertain significance	1080
+Uncertain significance;Benign	1053
+Uncertain significance;Conflicting classifications of pathogenicity	1050
+Conflicting classifications of pathogenicity;Uncertain significance	886
+Uncertain significance;Likely benign	856
+Likely benign;Uncertain significance	855
+Uncertain significance;Benign/Likely benign	742
+Likely benign;Conflicting classifications of pathogenicity	582
+Conflicting classifications of pathogenicity;Likely benign	570
+Benign/Likely benign;Uncertain significance	503
+Uncertain significance;Pathogenic	176
+Pathogenic;Conflicting classifications of pathogenicity	160
+Pathogenic;Uncertain significance	150
+Pathogenic;Benign/Likely benign	141
+Conflicting classifications of pathogenicity;Benign/Likely benign	136
+Pathogenic;Likely benign	135
+Benign/Likely benign;Conflicting classifications of pathogenicity	134
+Benign;Pathogenic	134
+Benign;Conflicting classifications of pathogenicity	127
+Conflicting classifications of pathogenicity;Pathogenic	124
+Likely benign;Pathogenic	120
+Pathogenic;Benign	116
+Benign/Likely benign;Pathogenic	107
+Conflicting classifications of pathogenicity;Benign	93
+Likely pathogenic;Conflicting classifications of pathogenicity	75
+Conflicting classifications of pathogenicity;Likely pathogenic	73
+Benign;Likely pathogenic	60
+Uncertain significance;Likely pathogenic	59
+Likely pathogenic;Benign	58
+Likely pathogenic;Uncertain significance	53
+Likely pathogenic;Likely benign	50
+Uncertain significance;Pathogenic/Likely pathogenic	50
+Likely pathogenic;Benign/Likely benign	47
+Likely benign;Likely pathogenic	35
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	33
+Benign/Likely benign;Likely pathogenic	32
+Pathogenic/Likely pathogenic;Uncertain significance	32
+Benign;Uncertain significance;Likely benign	30
+Benign;Likely benign;Uncertain significance	26
+Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic	26
+Likely benign;Pathogenic/Likely pathogenic	24
+Uncertain significance;Likely benign;Benign	24
+Uncertain significance;Benign;Likely benign	23
+Pathogenic/Likely pathogenic;Benign/Likely benign	22
+Likely benign;Benign;Uncertain significance	21
+Pathogenic/Likely pathogenic;Likely benign	21
+Benign/Likely benign;Pathogenic/Likely pathogenic	20
+Pathogenic/Likely pathogenic;Benign	20
+Benign; risk factor	17
+Benign/Likely benign;Likely benign;Uncertain significance	16
+Benign;Likely benign;Conflicting classifications of pathogenicity	16
+Benign;Pathogenic/Likely pathogenic	16
+Uncertain significance;Pathogenic;Benign	16
+Likely benign;Uncertain significance;Benign	15
+Likely benign;Uncertain significance;Conflicting classifications of pathogenicity	15
+Pathogenic;Uncertain significance;Conflicting classifications of pathogenicity	15
+Uncertain significance;Likely benign;Conflicting classifications of pathogenicity	15
+Benign;Conflicting classifications of pathogenicity;Likely benign	14
+Conflicting classifications of pathogenicity;Benign;Likely benign	14
+Conflicting classifications of pathogenicity;Uncertain significance;Likely benign	13
+Benign;Pathogenic;Likely benign	12
+Conflicting classifications of pathogenicity;Benign/Likely benign;Likely benign	12
+Conflicting classifications of pathogenicity;Likely benign;Uncertain significance	12
+Conflicting classifications of pathogenicity;Uncertain significance;Pathogenic	12
+Likely benign;Conflicting classifications of pathogenicity;Benign	12
+Uncertain significance;Benign/Likely benign;Likely benign	12
+Uncertain significance;Conflicting classifications of pathogenicity;Likely benign	12
+Likely benign;Benign;Conflicting classifications of pathogenicity	11
+Likely benign;Conflicting classifications of pathogenicity;Uncertain significance	11
+Benign; association	10
+Conflicting classifications of pathogenicity; other	10
+Conflicting classifications of pathogenicity;Pathogenic;Uncertain significance	10
+Conflicting classifications of pathogenicity;Uncertain significance;Benign	10
+not provided;Benign	10
+Conflicting classifications of pathogenicity; risk factor	9
+Conflicting classifications of pathogenicity;Likely benign;Benign	9
+Conflicting classifications of pathogenicity;Likely benign;Benign/Likely benign	9
+Pathogenic;Benign;Uncertain significance	9
+Pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	9
+Pathogenic;Uncertain significance;Benign	9
+Uncertain significance;Benign;Conflicting classifications of pathogenicity	9
+Uncertain significance;Pathogenic;Conflicting classifications of pathogenicity	9
+Benign/Likely benign;Likely benign;Pathogenic	8
+Benign/Likely benign;Uncertain significance;Conflicting classifications of pathogenicity	8
+Benign/Likely benign;Uncertain significance;Likely benign	8
+Benign/Likely benign;not provided	8
+Benign; other	8
+Conflicting classifications of pathogenicity;Benign/Likely benign;Uncertain significance	8
+Conflicting classifications of pathogenicity;Benign;Uncertain significance	8
+Conflicting classifications of pathogenicity;Likely benign;Pathogenic	8
+Conflicting classifications of pathogenicity;Uncertain significance;Benign/Likely benign	8
+Likely benign;Benign/Likely benign;Uncertain significance	8
+Likely benign;Uncertain significance;Benign/Likely benign	8
+Pathogenic;Likely benign;Conflicting classifications of pathogenicity	8
+Pathogenic;Uncertain significance;Benign/Likely benign	8
+Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity	8
+Uncertain significance;Benign/Likely benign;Pathogenic	8
+Uncertain significance;Benign;Pathogenic	8
+Uncertain significance;Conflicting classifications of pathogenicity;Benign/Likely benign	8
+Uncertain significance;Conflicting classifications of pathogenicity;Pathogenic	8
+not provided;Benign/Likely benign	8
+other	8
+Benign/Likely benign; other	7
+Benign/Likely benign;Conflicting classifications of pathogenicity;Likely benign	7
+Benign/Likely benign;Conflicting classifications of pathogenicity;Uncertain significance	7
+Benign/Likely benign;Pathogenic;Uncertain significance	7
+Benign/Likely benign;Uncertain significance;Pathogenic	7
+Benign;Likely benign;Pathogenic	7
+Benign;Pathogenic;Uncertain significance	7
+Benign;Uncertain significance;Pathogenic	7
+Conflicting classifications of pathogenicity;not provided	7
+Likely benign; other	7
+Likely benign;Benign/Likely benign;Conflicting classifications of pathogenicity	7
+Likely benign;Pathogenic;Benign	7
+Likely benign;Pathogenic;Benign/Likely benign	7
+Likely benign;Uncertain significance;Pathogenic	7
+Pathogenic;Benign/Likely benign;Uncertain significance	7
+Pathogenic;Conflicting classifications of pathogenicity;Benign	7
+Uncertain significance;Likely benign;Benign/Likely benign	7
+Uncertain significance;Likely pathogenic;Conflicting classifications of pathogenicity	7
+not provided;Uncertain significance	7
+Likely benign;Pathogenic;Uncertain significance	6
+Pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity	6
+Uncertain significance;Benign;Benign/Likely benign	6
+Uncertain significance;Pathogenic;Benign/Likely benign	6
+Benign;Benign/Likely benign;Uncertain significance	5
+Conflicting classifications of pathogenicity;Likely pathogenic;Uncertain significance	5
+Pathogenic;Likely benign;Benign	5
+Pathogenic;Likely benign;Benign/Likely benign	5
+Pathogenic;Likely benign;Likely pathogenic	5
+not provided;Conflicting classifications of pathogenicity	5
+Benign; drug response	4
+Benign;Conflicting classifications of pathogenicity;Benign/Likely benign	4
+Benign;Conflicting classifications of pathogenicity;Pathogenic	4
+Benign;Uncertain significance;Benign/Likely benign	4
+Conflicting classifications of pathogenicity; association	4
+Conflicting classifications of pathogenicity;Benign;Benign/Likely benign	4
+Conflicting classifications of pathogenicity;Uncertain significance;Pathogenic/Likely pathogenic	4
+Likely benign; drug response; other	4
+Likely benign;Benign;Likely pathogenic	4
+Likely benign;Conflicting classifications of pathogenicity;Benign/Likely benign	4
+Likely pathogenic;Likely benign;Benign/Likely benign	4
+Likely pathogenic;Likely benign;Conflicting classifications of pathogenicity	4
+Likely pathogenic;Pathogenic;Benign	4
+Likely pathogenic;Uncertain significance;Benign	4
+Likely pathogenic;Uncertain significance;Benign/Likely benign	4
+Pathogenic;Benign/Likely benign;Likely benign	4
+Pathogenic;Benign;Conflicting classifications of pathogenicity	4
+Pathogenic;Conflicting classifications of pathogenicity;Likely benign	4
+Pathogenic;Pathogenic/Likely pathogenic;Benign/Likely benign	4
+Pathogenic;Pathogenic/Likely pathogenic;Uncertain significance	4
+Pathogenic;Uncertain significance;Pathogenic/Likely pathogenic	4
+Uncertain significance;Likely pathogenic;Benign/Likely benign	4
+Uncertain significance;Pathogenic;Likely benign	4
+confers sensitivity	4
+Benign/Likely benign; drug response; other	3
+Benign/Likely benign;Likely benign;Conflicting classifications of pathogenicity	3
+Benign/Likely benign;Likely pathogenic;Uncertain significance	3
+Benign/Likely benign;Uncertain significance;Benign	3
+Benign; protective	3
+Benign;Conflicting classifications of pathogenicity;Uncertain significance	3
+Benign;Likely benign;Likely pathogenic	3
+Benign;Likely pathogenic;Uncertain significance	3
+Benign;Uncertain significance;Conflicting classifications of pathogenicity	3
+Benign;Uncertain significance;Likely pathogenic	3
+Conflicting classifications of pathogenicity;Likely benign;Benign;Benign/Likely benign	3
+Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic;Uncertain significance	3
+Conflicting classifications of pathogenicity;Pathogenic;Benign	3
+Conflicting classifications of pathogenicity;Uncertain significance;Benign/Likely benign;Likely benign	3
+Conflicting classifications of pathogenicity;Uncertain significance;Likely benign;Benign	3
+Conflicting classifications of pathogenicity;Uncertain significance;Likely pathogenic	3
+Likely benign; drug response	3
+Likely benign;Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic	3
+Likely benign;Pathogenic;Conflicting classifications of pathogenicity	3
+Likely benign;Pathogenic;Pathogenic/Likely pathogenic	3
+Likely benign;not provided	3
+Likely pathogenic;Conflicting classifications of pathogenicity;Likely benign	3
+Likely pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	3
+Likely pathogenic;Likely benign;Pathogenic	3
+Likely pathogenic;Likely benign;Pathogenic/Likely pathogenic	3
+Likely pathogenic;Pathogenic;Benign/Likely benign	3
+Likely pathogenic;Pathogenic;Conflicting classifications of pathogenicity	3
+Pathogenic/Likely pathogenic;Likely benign;Conflicting classifications of pathogenicity	3
+Pathogenic/Likely pathogenic;Pathogenic;Conflicting classifications of pathogenicity	3
+Pathogenic/Likely pathogenic;Uncertain significance;Pathogenic	3
+Pathogenic;Conflicting classifications of pathogenicity;Benign/Likely benign	3
+Pathogenic;Likely benign;Pathogenic/Likely pathogenic	3
+Pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	3
+Uncertain significance;Conflicting classifications of pathogenicity;Benign	3
+Uncertain significance;Likely benign;Pathogenic	3
+Uncertain significance;Likely pathogenic;Benign	3
+Uncertain significance;Likely pathogenic;Pathogenic/Likely pathogenic	3
+Uncertain significance;Pathogenic;Pathogenic/Likely pathogenic;Benign	3
+Benign/Likely benign; drug response	2
+Benign/Likely benign;Conflicting classifications of pathogenicity;Benign	2
+Benign/Likely benign;Conflicting classifications of pathogenicity;Pathogenic	2
+Benign/Likely benign;Likely pathogenic;Pathogenic	2
+Benign/Likely benign;Pathogenic/Likely pathogenic;Likely benign	2
+Benign/Likely benign;Pathogenic;Conflicting classifications of pathogenicity	2
+Benign/Likely benign;Pathogenic;Likely pathogenic	2
+Benign; Affects	2
+Benign;Conflicting classifications of pathogenicity;Likely pathogenic	2
+Benign;Likely benign;Conflicting classifications of pathogenicity;Pathogenic	2
+Benign;Likely benign;Pathogenic;Uncertain significance	2
+Benign;Likely benign;Uncertain significance;Benign/Likely benign	2
+Benign;Pathogenic/Likely pathogenic;Likely benign	2
+Benign;Pathogenic;Likely pathogenic	2
+Benign;Pathogenic;Uncertain significance;Pathogenic/Likely pathogenic	2
+Benign;not provided	2
+Conflicting classifications of pathogenicity; association;Conflicting classifications of pathogenicity	2
+Conflicting classifications of pathogenicity; protective	2
+Conflicting classifications of pathogenicity;Benign/Likely benign;Benign	2
+Conflicting classifications of pathogenicity;Benign/Likely benign;Pathogenic	2
+Conflicting classifications of pathogenicity;Benign/Likely benign;Pathogenic/Likely pathogenic	2
+Conflicting classifications of pathogenicity;Likely benign;Likely pathogenic	2
+Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic;Pathogenic	2
+Likely benign;Benign/Likely benign;Likely pathogenic	2
+Likely benign;Benign/Likely benign;Uncertain significance;Benign	2
+Likely benign;Benign;Benign/Likely benign;Uncertain significance;Conflicting classifications of pathogenicity	2
+Likely benign;Benign;Conflicting classifications of pathogenicity;Benign/Likely benign	2
+Likely benign;Benign;Pathogenic/Likely pathogenic	2
+Likely benign;Likely pathogenic;Benign/Likely benign	2
+Likely benign;Likely pathogenic;Conflicting classifications of pathogenicity	2
+Likely benign;Likely pathogenic;Pathogenic	2
+Likely benign;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	2
+Likely benign;Pathogenic/Likely pathogenic;Uncertain significance	2
+Likely benign;drug response	2
+Likely pathogenic;Benign/Likely benign;Likely benign	2
+Likely pathogenic;Benign/Likely benign;Pathogenic	2
+Likely pathogenic;Benign;Uncertain significance	2
+Likely pathogenic;Pathogenic;Uncertain significance;Benign	2
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	2
+Pathogenic/Likely pathogenic;Likely benign;Likely pathogenic	2
+Pathogenic/Likely pathogenic;Likely benign;Pathogenic	2
+Pathogenic/Likely pathogenic;Pathogenic;Likely benign	2
+Pathogenic/Likely pathogenic;Pathogenic;Uncertain significance	2
+Pathogenic/Likely pathogenic;Uncertain significance;Conflicting classifications of pathogenicity	2
+Pathogenic/Likely pathogenic;Uncertain significance;Likely benign	2
+Pathogenic;Benign/Likely benign;Likely pathogenic	2
+Pathogenic;Benign;Likely benign	2
+Pathogenic;Likely benign;Uncertain significance	2
+Pathogenic;Likely pathogenic;Likely benign	2
+Pathogenic;Likely pathogenic;Uncertain significance	2
+Pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	2
+Pathogenic;Uncertain significance;Likely benign	2
+Pathogenic;Uncertain significance;not provided	2
+Uncertain significance;Benign/Likely benign; other	2
+Uncertain significance;Conflicting classifications of pathogenicity; other	2
+Uncertain significance;Conflicting classifications of pathogenicity;Likely pathogenic	2
+Uncertain significance;Pathogenic/Likely pathogenic;Benign	2
+Uncertain significance;Pathogenic/Likely pathogenic;Likely benign	2
+Uncertain significance;Pathogenic;Benign;Likely benign	2
+Uncertain significance;Pathogenic;Likely benign;Benign	2
+Uncertain significance;Pathogenic;Likely benign;Benign/Likely benign	2
+association;Benign	2
+not provided;Benign;Uncertain significance	2
+not provided;Uncertain significance;Benign/Likely benign	2
+Benign/Likely benign; association	1
+Benign/Likely benign; other;Uncertain significance	1
+Benign/Likely benign;Benign;Conflicting classifications of pathogenicity	1
+Benign/Likely benign;Benign;Likely benign;Uncertain significance;Conflicting classifications of pathogenicity	1
+Benign/Likely benign;Benign;Likely pathogenic	1
+Benign/Likely benign;Benign;Pathogenic	1
+Benign/Likely benign;Benign;Uncertain significance	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Benign;Likely benign	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Likely benign;Pathogenic/Likely pathogenic	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Likely benign;Uncertain significance	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Likely pathogenic;Likely benign	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Uncertain significance;Benign	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;Uncertain significance;Benign;Likely benign	1
+Benign/Likely benign;Conflicting classifications of pathogenicity;not provided	1
+Benign/Likely benign;Likely benign;Benign;Conflicting classifications of pathogenicity	1
+Benign/Likely benign;Likely benign;Pathogenic;Conflicting classifications of pathogenicity	1
+Benign/Likely benign;Likely benign;Uncertain significance;Benign	1
+Benign/Likely benign;Likely benign;Uncertain significance;Conflicting classifications of pathogenicity	1
+Benign/Likely benign;Likely pathogenic;Conflicting classifications of pathogenicity;Likely benign	1
+Benign/Likely benign;Likely pathogenic;Likely benign	1
+Benign/Likely benign;Pathogenic/Likely pathogenic;Likely pathogenic	1
+Benign/Likely benign;Pathogenic;Uncertain significance;Benign;Likely benign	1
+Benign/Likely benign;Uncertain significance;Conflicting classifications of pathogenicity;Likely benign;Benign	1
+Benign/Likely benign;Uncertain significance;Likely benign;Benign	1
+Benign/Likely benign;Uncertain significance;Likely pathogenic	1
+Benign/Likely benign;not provided;Likely pathogenic	1
+Benign/Likely benign;not provided;Uncertain significance	1
+Benign/Likely benign;risk factor	1
+Benign; Affects; association; other	1
+Benign; Affects;Benign	1
+Benign; other;Benign;Uncertain significance	1
+Benign; other;Likely pathogenic	1
+Benign; other;Pathogenic/Likely pathogenic;Likely pathogenic;Uncertain significance	1
+Benign;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Benign;Benign/Likely benign;Conflicting classifications of pathogenicity;Likely benign	1
+Benign;Benign/Likely benign;Likely benign;Pathogenic	1
+Benign;Benign/Likely benign;Uncertain significance;Likely benign;Conflicting classifications of pathogenicity	1
+Benign;Conflicting classifications of pathogenicity;Pathogenic;Likely benign	1
+Benign;Likely benign;Pathogenic/Likely pathogenic	1
+Benign;Likely pathogenic;Benign/Likely benign	1
+Benign;Likely pathogenic;Conflicting classifications of pathogenicity	1
+Benign;Likely pathogenic;Pathogenic/Likely pathogenic	1
+Benign;Pathogenic/Likely pathogenic;Pathogenic	1
+Benign;Pathogenic/Likely pathogenic;Uncertain significance	1
+Benign;Pathogenic;Benign/Likely benign	1
+Benign;Pathogenic;Conflicting classifications of pathogenicity	1
+Benign;Pathogenic;Likely benign;Uncertain significance	1
+Benign;Pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Likely benign	1
+Benign;Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Benign;Uncertain significance;Conflicting classifications of pathogenicity;Benign/Likely benign	1
+Benign;Uncertain significance;Conflicting classifications of pathogenicity;Likely benign	1
+Benign;Uncertain significance;Pathogenic;Likely benign	1
+Benign;association	1
+Benign;not provided;Likely pathogenic	1
+Benign;risk factor	1
+Conflicting classifications of pathogenicity; Affects	1
+Conflicting classifications of pathogenicity; association; risk factor;Conflicting classifications of pathogenicity	1
+Conflicting classifications of pathogenicity; drug response	1
+Conflicting classifications of pathogenicity; drug response; other;Conflicting classifications of pathogenicity; drug response;Uncertain significance;Benign; drug response	1
+Conflicting classifications of pathogenicity; risk factor;Conflicting classifications of pathogenicity;Uncertain significance	1
+Conflicting classifications of pathogenicity; risk factor;Likely pathogenic	1
+Conflicting classifications of pathogenicity;Benign/Likely benign;Likely benign;Benign	1
+Conflicting classifications of pathogenicity;Benign/Likely benign;Pathogenic;Pathogenic/Likely pathogenic	1
+Conflicting classifications of pathogenicity;Benign;Likely pathogenic	1
+Conflicting classifications of pathogenicity;Benign;Pathogenic/Likely pathogenic	1
+Conflicting classifications of pathogenicity;Benign;Uncertain significance;Benign/Likely benign	1
+Conflicting classifications of pathogenicity;Benign;Uncertain significance;Likely benign	1
+Conflicting classifications of pathogenicity;Benign;Uncertain significance;Pathogenic	1
+Conflicting classifications of pathogenicity;Conflicting classifications of pathogenicity; other	1
+Conflicting classifications of pathogenicity;Likely benign;Benign/Likely benign;Uncertain significance	1
+Conflicting classifications of pathogenicity;Likely benign;Benign;Uncertain significance	1
+Conflicting classifications of pathogenicity;Likely benign;Pathogenic/Likely pathogenic	1
+Conflicting classifications of pathogenicity;Likely benign;Uncertain significance;Benign	1
+Conflicting classifications of pathogenicity;Likely pathogenic;Likely benign	1
+Conflicting classifications of pathogenicity;Likely pathogenic;Pathogenic	1
+Conflicting classifications of pathogenicity;Likely pathogenic;Uncertain significance;Pathogenic/Likely pathogenic	1
+Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic;Likely pathogenic	1
+Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic;Pathogenic;Uncertain significance	1
+Conflicting classifications of pathogenicity;Pathogenic;Benign;Uncertain significance;Likely pathogenic	1
+Conflicting classifications of pathogenicity;Pathogenic;Pathogenic/Likely pathogenic	1
+Conflicting classifications of pathogenicity;Uncertain significance;Benign/Likely benign;Benign	1
+Conflicting classifications of pathogenicity;Uncertain significance;Benign;Benign/Likely benign	1
+Conflicting classifications of pathogenicity;Uncertain significance;Benign;Likely benign;Benign/Likely benign	1
+Conflicting classifications of pathogenicity;Uncertain significance;Pathogenic;Benign/Likely benign	1
+Conflicting classifications of pathogenicity;not provided;Benign	1
+Conflicting classifications of pathogenicity;not provided;Likely benign	1
+Conflicting classifications of pathogenicity;not provided;Uncertain significance	1
+Likely benign; Affects; association	1
+Likely benign; association	1
+Likely benign; drug response;Likely benign	1
+Likely benign;Benign/Likely benign;Conflicting classifications of pathogenicity;Benign	1
+Likely benign;Benign/Likely benign;Conflicting classifications of pathogenicity;Uncertain significance	1
+Likely benign;Benign/Likely benign;Likely pathogenic;Pathogenic/Likely pathogenic;Pathogenic	1
+Likely benign;Benign/Likely benign;Pathogenic	1
+Likely benign;Benign/Likely benign;Pathogenic/Likely pathogenic	1
+Likely benign;Benign/Likely benign;Uncertain significance;Pathogenic;Benign	1
+Likely benign;Benign;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Likely benign;Benign;Pathogenic	1
+Likely benign;Benign;Pathogenic;Conflicting classifications of pathogenicity	1
+Likely benign;Benign;Pathogenic;Uncertain significance	1
+Likely benign;Conflicting classifications of pathogenicity; other	1
+Likely benign;Conflicting classifications of pathogenicity;Benign/Likely benign;Benign	1
+Likely benign;Conflicting classifications of pathogenicity;Benign;Benign/Likely benign	1
+Likely benign;Conflicting classifications of pathogenicity;Benign;Uncertain significance	1
+Likely benign;Conflicting classifications of pathogenicity;Likely pathogenic	1
+Likely benign;Conflicting classifications of pathogenicity;Pathogenic	1
+Likely benign;Conflicting classifications of pathogenicity;Uncertain significance;Benign/Likely benign	1
+Likely benign;Conflicting classifications of pathogenicity;Uncertain significance;Benign/Likely benign;Likely pathogenic	1
+Likely benign;Likely pathogenic;Benign	1
+Likely benign;Likely pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic	1
+Likely benign;Likely pathogenic;Pathogenic/Likely pathogenic	1
+Likely benign;Likely pathogenic;Uncertain significance	1
+Likely benign;Pathogenic/Likely pathogenic;Benign	1
+Likely benign;Pathogenic/Likely pathogenic;Pathogenic	1
+Likely benign;Pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Likely benign;Pathogenic;Benign;Uncertain significance	1
+Likely benign;Pathogenic;Conflicting classifications of pathogenicity;Benign	1
+Likely benign;Pathogenic;Likely pathogenic	1
+Likely benign;Pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	1
+Likely benign;Pathogenic;Pathogenic/Likely pathogenic;Uncertain significance;Conflicting classifications of pathogenicity	1
+Likely benign;Pathogenic;Uncertain significance;Benign	1
+Likely benign;Pathogenic;Uncertain significance;not provided	1
+Likely benign;Uncertain significance;Benign/Likely benign;Benign	1
+Likely benign;Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Likely benign;Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity;Likely pathogenic	1
+Likely benign;Uncertain significance;Benign;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Likely benign;Uncertain significance;Benign;Conflicting classifications of pathogenicity	1
+Likely benign;Uncertain significance;Likely pathogenic	1
+Likely benign;Uncertain significance;Pathogenic;Benign	1
+Likely benign;no classifications from unflagged records;Conflicting classifications of pathogenicity	1
+Likely benign;not provided;Benign/Likely benign;Pathogenic	1
+Likely pathogenic; protective	1
+Likely pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Likely pathogenic;Benign/Likely benign;Uncertain significance	1
+Likely pathogenic;Benign;Benign/Likely benign;Likely benign	1
+Likely pathogenic;Benign;Conflicting classifications of pathogenicity	1
+Likely pathogenic;Benign;Likely benign;Pathogenic	1
+Likely pathogenic;Benign;Pathogenic	1
+Likely pathogenic;Benign;Pathogenic;Uncertain significance	1
+Likely pathogenic;Conflicting classifications of pathogenicity;Benign	1
+Likely pathogenic;Conflicting classifications of pathogenicity;Pathogenic	1
+Likely pathogenic;Conflicting classifications of pathogenicity;Pathogenic;Likely benign	1
+Likely pathogenic;Conflicting classifications of pathogenicity;Uncertain significance;Likely benign	1
+Likely pathogenic;Likely benign;Uncertain significance	1
+Likely pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	1
+Likely pathogenic;Pathogenic/Likely pathogenic;Uncertain significance	1
+Likely pathogenic;Pathogenic/Likely pathogenic;Uncertain significance;Pathogenic;Likely benign	1
+Likely pathogenic;Pathogenic;Benign/Likely benign;Likely benign	1
+Likely pathogenic;Pathogenic;Benign;Likely benign	1
+Likely pathogenic;Pathogenic;Conflicting classifications of pathogenicity;Uncertain significance	1
+Likely pathogenic;Pathogenic;Conflicting classifications of pathogenicity;Uncertain significance;Benign;Pathogenic/Likely pathogenic	1
+Likely pathogenic;Pathogenic;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	1
+Likely pathogenic;Pathogenic;Uncertain significance	1
+Likely pathogenic;Uncertain significance;Conflicting classifications of pathogenicity	1
+Likely pathogenic;Uncertain significance;Pathogenic	1
+Likely pathogenic;Uncertain significance;Pathogenic/Likely pathogenic	1
+Likely pathogenic;drug response	1
+Likely pathogenic;not provided	1
+Pathogenic/Likely pathogenic/Pathogenic, low penetrance; risk factor	1
+Pathogenic/Likely pathogenic; other	1
+Pathogenic/Likely pathogenic; risk factor	1
+Pathogenic/Likely pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Pathogenic/Likely pathogenic;Benign/Likely benign;Pathogenic	1
+Pathogenic/Likely pathogenic;Benign/Likely benign;Uncertain significance	1
+Pathogenic/Likely pathogenic;Benign;Pathogenic	1
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Benign	1
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Benign/Likely benign	1
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Benign/Likely benign;Uncertain significance	1
+Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity;Likely pathogenic	1
+Pathogenic/Likely pathogenic;Likely benign;Benign/Likely benign	1
+Pathogenic/Likely pathogenic;Likely pathogenic;Benign	1
+Pathogenic/Likely pathogenic;Likely pathogenic;Conflicting classifications of pathogenicity	1
+Pathogenic/Likely pathogenic;Likely pathogenic;Uncertain significance	1
+Pathogenic/Likely pathogenic;Pathogenic;Benign/Likely benign	1
+Pathogenic/Likely pathogenic;Uncertain significance;Benign	1
+Pathogenic/Likely pathogenic;Uncertain significance;Likely benign;Pathogenic	1
+Pathogenic/Likely pathogenic;drug response	1
+Pathogenic/Pathogenic, low penetrance; other	1
+Pathogenic/Pathogenic, low penetrance; other; risk factor	1
+Pathogenic; drug response;Pathogenic/Likely pathogenic	1
+Pathogenic; risk factor	1
+Pathogenic;Benign/Likely benign;Benign	1
+Pathogenic;Benign/Likely benign;Conflicting classifications of pathogenicity;Uncertain significance	1
+Pathogenic;Benign/Likely benign;Likely pathogenic;Likely benign	1
+Pathogenic;Benign/Likely benign;Uncertain significance;Benign	1
+Pathogenic;Benign/Likely benign;Uncertain significance;Likely benign;Pathogenic/Likely pathogenic	1
+Pathogenic;Benign;Benign/Likely benign	1
+Pathogenic;Benign;Conflicting classifications of pathogenicity;Uncertain significance	1
+Pathogenic;Benign;Likely benign;Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity	1
+Pathogenic;Benign;Likely pathogenic	1
+Pathogenic;Benign;Pathogenic/Likely pathogenic	1
+Pathogenic;Benign;Pathogenic/Likely pathogenic;Uncertain significance	1
+Pathogenic;Conflicting classifications of pathogenicity;Benign/Likely benign;Likely benign	1
+Pathogenic;Conflicting classifications of pathogenicity;Likely benign;Pathogenic/Likely pathogenic	1
+Pathogenic;Conflicting classifications of pathogenicity;Likely pathogenic	1
+Pathogenic;Conflicting classifications of pathogenicity;Likely pathogenic;Benign/Likely benign	1
+Pathogenic;Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic	1
+Pathogenic;Likely benign;Benign;Conflicting classifications of pathogenicity;Uncertain significance	1
+Pathogenic;Likely benign;Likely pathogenic;Benign	1
+Pathogenic;Likely benign;Likely pathogenic;Uncertain significance	1
+Pathogenic;Likely pathogenic;Benign	1
+Pathogenic;Likely pathogenic;Benign;not provided	1
+Pathogenic;Likely pathogenic;Conflicting classifications of pathogenicity	1
+Pathogenic;Likely pathogenic;Likely benign;Benign/Likely benign	1
+Pathogenic;Likely pathogenic;Pathogenic/Likely pathogenic;Uncertain significance;Conflicting classifications of pathogenicity	1
+Pathogenic;Likely pathogenic;Uncertain significance;Pathogenic/Likely pathogenic;Likely benign	1
+Pathogenic;Pathogenic/Likely pathogenic; risk factor	1
+Pathogenic;Pathogenic/Likely pathogenic;Benign	1
+Pathogenic;Pathogenic/Likely pathogenic;Benign/Likely benign;Likely benign	1
+Pathogenic;Pathogenic/Likely pathogenic;Benign;Likely pathogenic	1
+Pathogenic;Pathogenic/Likely pathogenic;Likely pathogenic;Uncertain significance;Likely benign	1
+Pathogenic;Uncertain significance;Likely benign;Benign/Likely benign	1
+Pathogenic;Uncertain significance;Likely pathogenic	1
+Pathogenic;Uncertain significance;Likely pathogenic;Pathogenic/Likely pathogenic	1
+Pathogenic;not provided	1
+Pathogenic;not provided;Benign;Conflicting classifications of pathogenicity	1
+Pathogenic;not provided;Conflicting classifications of pathogenicity	1
+Pathogenic;other;Uncertain significance	1
+Uncertain risk allele; risk factor	1
+Uncertain significance; association	1
+Uncertain significance; drug response	1
+Uncertain significance;Benign/Likely benign;Benign;Likely benign	1
+Uncertain significance;Benign/Likely benign;Conflicting classifications of pathogenicity;Likely benign	1
+Uncertain significance;Benign/Likely benign;Likely benign;Benign	1
+Uncertain significance;Benign/Likely benign;Likely benign;Conflicting classifications of pathogenicity	1
+Uncertain significance;Benign;Conflicting classifications of pathogenicity;Pathogenic;Likely benign;Benign/Likely benign	1
+Uncertain significance;Benign;Likely benign;Benign/Likely benign	1
+Uncertain significance;Benign;Likely pathogenic	1
+Uncertain significance;Benign;Pathogenic/Likely pathogenic	1
+Uncertain significance;Benign;Pathogenic;Benign/Likely benign	1
+Uncertain significance;Benign;Pathogenic;Conflicting classifications of pathogenicity	1
+Uncertain significance;Conflicting classifications of pathogenicity; association; risk factor	1
+Uncertain significance;Conflicting classifications of pathogenicity; risk factor	1
+Uncertain significance;Conflicting classifications of pathogenicity;Likely benign;Benign/Likely benign	1
+Uncertain significance;Conflicting classifications of pathogenicity;Likely benign;Benign;Benign/Likely benign	1
+Uncertain significance;Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic	1
+Uncertain significance;Conflicting classifications of pathogenicity;Pathogenic/Likely pathogenic;Pathogenic	1
+Uncertain significance;Conflicting classifications of pathogenicity;Pathogenic;Pathogenic/Likely pathogenic	1
+Uncertain significance;Conflicting classifications of pathogenicity;not provided;Benign/Likely benign	1
+Uncertain significance;Likely benign;Benign/Likely benign;Pathogenic;Benign	1
+Uncertain significance;Likely benign;Benign;Benign/Likely benign	1
+Uncertain significance;Likely benign;Benign;Pathogenic	1
+Uncertain significance;Likely benign;Benign;Pathogenic;Likely pathogenic	1
+Uncertain significance;Likely benign;Likely pathogenic	1
+Uncertain significance;Likely benign;Pathogenic/Likely pathogenic	1
+Uncertain significance;Likely benign;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	1
+Uncertain significance;Likely pathogenic;Benign;Likely benign	1
+Uncertain significance;Likely pathogenic;Benign;not provided;Conflicting classifications of pathogenicity	1
+Uncertain significance;Likely pathogenic;Pathogenic;Benign	1
+Uncertain significance;Pathogenic/Likely pathogenic; association	1
+Uncertain significance;Pathogenic/Likely pathogenic;Benign/Likely benign	1
+Uncertain significance;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	1
+Uncertain significance;Pathogenic/Likely pathogenic;Likely pathogenic	1
+Uncertain significance;Pathogenic/Likely pathogenic;Likely pathogenic;Likely benign	1
+Uncertain significance;Pathogenic;Benign;Likely pathogenic	1
+Uncertain significance;Pathogenic;Likely pathogenic	1
+Uncertain significance;Pathogenic;Likely pathogenic;Benign/Likely benign;Pathogenic/Likely pathogenic;Conflicting classifications of pathogenicity	1
+Uncertain significance;Pathogenic;other	1
+Uncertain significance;not provided;Conflicting classifications of pathogenicity	1
+Uncertain significance;not provided;Conflicting classifications of pathogenicity;Benign	1
+association not found;Benign/Likely benign	1
+association; drug response; risk factor	1
+association; risk factor	1
+confers sensitivity; other	1
+drug response; other	1
+drug response;Likely benign; other	1
+drug response;Likely pathogenic	1
+drug response;Pathogenic;Conflicting classifications of pathogenicity	1
+no classifications from unflagged records	1
+no classifications from unflagged records;Conflicting classifications of pathogenicity	1
+not provided;Benign/Likely benign;Benign	1
+not provided;Benign/Likely benign;Likely benign	1
+not provided;Benign/Likely benign;Likely benign;Conflicting classifications of pathogenicity	1
+not provided;Benign/Likely benign;Uncertain significance	1
+not provided;Benign/Likely benign;Uncertain significance;Pathogenic	1
+not provided;Benign;Pathogenic	1
+not provided;Benign;Pathogenic;Uncertain significance	1
+not provided;Conflicting classifications of pathogenicity; other; risk factor	1
+not provided;Conflicting classifications of pathogenicity;Pathogenic	1
+not provided;Conflicting classifications of pathogenicity;Uncertain significance	1
+not provided;Likely benign;Benign	1
+not provided;Likely benign;Benign/Likely benign	1
+not provided;Likely pathogenic;Conflicting classifications of pathogenicity	1
+not provided;Pathogenic	1
+not provided;Pathogenic/Likely pathogenic	1
+not provided;Pathogenic/Likely pathogenic; risk factor	1
+not provided;Uncertain significance;Conflicting classifications of pathogenicity	1
+other; risk factor	1
+protective; risk factor	1
+risk factor;Benign	1
+risk factor;Likely benign	1
+risk factor;Likely risk allele	1

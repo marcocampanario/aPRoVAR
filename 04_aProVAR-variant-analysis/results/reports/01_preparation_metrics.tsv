@@ -1,0 +1,10 @@
+metric	value
+Samples in header	1010
+Total unsplit variant sites	582907
+Split ALT-allele records	596386
+Sites with F_MISSING equal to zero	532695
+Sites with F_MISSING greater than 1%	31875
+Sites with F_MISSING greater than 10%	15847
+Sites with phenotype-adjusted AF_EXCL	4017
+ALT alleles aligned to ANNOVAR	596386
+ALT alleles with non-missing ABRaOM AF	253240

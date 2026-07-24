@@ -1,0 +1,5 @@
+definition	n_variants
+Strict pLOF: high-impact MANE Select RefSeq consequence	11708
+High REVEL score (≥ 0.773)	7317
+Legacy composite: strict pLOF OR high REVEL	19003
+GVs strictly pLOF or with REVEL ≥ 0.773, and P/LP	921

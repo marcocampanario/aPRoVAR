@@ -1,0 +1,10 @@
+aPRoVAR VARIANT CLASSIFICATION REPORT
+=====================================
+
+Total sites before the complete-genotype filter: 582907
+Sites with F_MISSING = 0: 532695
+
+Population-database status among F_MISSING = 0 sites:
+- known: 500274
+- absent: 10309
+- novel: 22112
